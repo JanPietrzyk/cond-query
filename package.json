@@ -1,0 +1,32 @@
+{
+  "name": "cond-query",
+  "description": "A JavaScript library to seperate conditions from rendering methods",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jan Philipp Pietrzyk",
+    "email": "mail@jpietrzyk.de",
+    "url": "http://jpietrzyk.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JanPietrzyk/cond-query"
+  },
+  "bugs": {
+    "url": "https://github.com/JanPietrzyk/cond-query/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-uglify": "~0.7.0"
+  }
+}
