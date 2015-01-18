@@ -1,6 +1,6 @@
 # cond-query
 
-This library helps you test layout components separate from there conditions, so you can test device agnostic and concentrate just on the things that matter!
+This library helps you test layout components separate from their conditions, so you can test device agnostic and concentrate just on the things that matter!
 
 # Reasoning
 
@@ -10,7 +10,7 @@ I created this little library, after completing my first one page responsive lay
 * Disabling several Effects on different device classes, due to performance problems
 * Adding new features after deployment
 
-In short, I created a mess :), and this fixed it. It helps decouple your handlers from there corresponding events and device conditions.
+In short, I created a mess :), and this fixed it. It helps decouple your handlers from their corresponding events and device conditions.
 
 # Usage
 
@@ -38,17 +38,17 @@ condQuery.on($(window), 'orientationchange')
 
 This handler is only called if _isLandscape_ is _true_. After it was true the resetter will be invoked once.
  
-After your is complete, you just call
+After your setup is complete, you just call
 
 <pre>
 condQuery.start(true);
 </pre>
 
-Where true will call every active handler once.
+Where _true_ will call every active handler once.
 
 # Recommendations
 
-To tap into the intended features of this library, I recomend creating objects containing all handlers for a specific component.
+To tap into the intended features of this library, I recommend creating objects containing all handlers for a specific component.
 
 <pre>
 
@@ -60,5 +60,5 @@ var navigationHandlers = {
 };
 </pre>
 
-Then use the document ready event, to set up all handlers with there events and conditions. And for debugging and testing purpose disable _condQuery.start()_ and just call the handlers directy until everything works.
+Then use the document ready event, to set up all handlers with their events and conditions. And for debugging and testing purpose disable _condQuery.start()_ and just call the handlers directy until everything works.
 
